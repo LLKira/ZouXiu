@@ -1,0 +1,25 @@
+<ion-view title="注册">
+	<ion-nav-buttons side="right">
+	    <button class="button" ng-click="login()">登录</button>
+   	</ion-nav-buttons>
+
+
+    <ion-content class="bkColor">
+
+		<label class="item item-input">
+			<input type="text" ng-model="userInfo.username" placeholder="账号">
+		</label>
+		<label class="item item-input">
+			<input type="password" ng-model="userInfo.psd" placeholder="密码">
+		</label>
+		<label class="item item-input">
+			<input type="password" ng-model="userInfo.repsd" placeholder="重复密码">
+		</label>
+
+	    <div class="padding regPad" ng-click="submit()">
+	    	<button type="button" class="button button-block button-positive">同意服务协议并注册</button>
+	    </div>
+
+
+    </ion-content>
+</ion-view>

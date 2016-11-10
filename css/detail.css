@@ -1,0 +1,93 @@
+/*选项卡*/
+.tabs-icon-top .detail-tab{
+color:white;
+font-size:16px
+}
+/*时间*/
+#count-time{
+    background-color:#333;
+    height:45px;
+    width:100%;
+    color:#ffffff;
+    font-size:17px;
+    text-align:center;
+    line-height:45px
+}
+#count-time span{
+    text-indent:0px;
+}
+/*商品介绍*/
+.intro-ing{
+    background:-webkit-gradient(linear, 0 0, 0 100%, from(#eeeeee), to(#f7f7f7));
+    width:100%;
+    padding:40px 0px;
+}
+.intro-ing .pic-intro{
+    background-color:#fff;
+    width:220px;
+    height:200px;
+    margin: 20px 50px;
+}
+.intro-price{
+    margin-left:20px;
+    /*padding:40px*/
+    /*margin-bottom:10px;*/
+}
+.price-name{
+    width:300px;
+    height:50px;
+    text-align:center;
+    line-height:50px;
+    /*margin:10px 20px 30px 20px;*/
+    margin-left:10px;
+    display: flex;
+    margin-bottom:30px;
+}
+.left{
+    /*float:left;*/
+    flex:1;
+    height:50px;
+    width:34px;
+    background:url("../img/01.png")  no-repeat;
+    background-size:100% 100%;
+}
+.right{
+    flex:6;
+    float:left;
+    height:50px;
+    /*width:234px;*/
+    background:url("../img/00.png")  repeat;
+    background-size:100% 100%;
+    color:#fff;
+    font-size:14px;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+}
+.original-price{
+    margin-right:30px;
+}
+.bought{
+    margin-left:60px
+}
+
+/*商品详情*/
+.pic-detail{
+    width:100%;
+    height:auto;
+}
+
+/**/
+
+/*商品实拍*/
+.xunhuan .slider-slides{
+    overflow: hidden;
+}
+.xunhuan .pic-real img{
+    max-width:100%;
+    height:100%;
+    margin-top:0px
+}
+.detail-real  .scroll,.xunhuan{
+    height:100%
+}

@@ -1,0 +1,29 @@
+ul,li{
+    margin:0;
+    padding:0;
+}
+.sortSpiral{
+    position:absolute;
+    top:200px;
+    left:150px;
+}
+h4.sortAll{
+    position:relative;
+    font-size: 20px;
+    margin-left: 5px;
+    margin-top:54px;
+    font-weight: bold;
+}
+.sortList{
+    margin-bottom:0;
+    font-size: 18px;
+    font-weight: bold;
+}
+h4.sortAll i{
+   position:absolute;
+    right:10px;
+    top:0;
+    color:#ccc;
+    font-size:16px;
+}
+

@@ -1,0 +1,44 @@
+<ion-view hide-nav-bar="true">
+	<!--头部-->
+    <div class="bar bar-header carheader">
+        <button class="button ion-android-arrow-back carBack" ng-click="toHome()"></button>
+        <h1 class="title">购物车</h1>
+        <button class="button jiesuan" ng-click="Caraccount()">去结算</button>
+    </div>
+	<!--计算总量、总价-->
+    <div class="basicinform bar bar-header" ng-show="totalNum">
+        <p class="basicinform1">商品数量：{{totalNum}}</p>
+        <p class="basicinform2">应付总额(不含运费)：<span>￥{{totalPrice}}</span></p>
+    </div>
+	<!--购物车中商品-->
+    <ion-content class="carcontent">
+        <div class="carsinform" ng-show="totalNum">
+            <div class="carsinformdetail" ng-show="item.number" ng-repeat="item in hasGoods">
+                <img ng-src="{{item.goodsListImg}}" alt="" class="carimg1">
+                <div class="cardiv1">
+                    <p class="carP1">{{item.goodsName}}</p>
+                    <p class="carP">单价：￥<span class="price">{{item.price}}</span> </p>
+                    <p class="carP">数量：
+                        <button class="btnRed" ng-click="carRed()">-</button>
+                        <button class="btnshu" ng-model="item.number">{{item.number}}</button>
+                        <button class="btnAdd" ng-click="carAdd()" >+</button>
+                    </p>
+                </div>
+                <div class="cardiv2">
+                    <img src="img/trash.png" alt="" class="carimg2" ng-click="cDel()">
+                    <span class="L">L</span>
+                </div>
+            </div>
+        </div>
+
+        <!--空购物车显示页面-->
+        <div class="emptyCar" ng-hide="totalNum">
+            <div class="emptyCarL">
+                <p class="carPempty">亲，来呀，来呀！我们去Shopping~</p>
+                <div class="carDivempty"></div>
+            </div>
+            <button class="cargo" ng-click="cargobtn()">去逛逛</button>
+        </div>
+
+    </ion-content>
+</ion-view>

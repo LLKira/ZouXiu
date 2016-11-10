@@ -1,0 +1,32 @@
+<ion-view title="我的秀">
+    <ion-content class="bkColor">
+        <div class="idCard">
+        	<div class="myImg"><img src="img/tou.png" alt=""/></div>
+        	<div class="message">
+        		<p class="name">昵称：{{userName || "未登录"}}</p>
+        		<a href="#/tabs/login"><button type="button" class="btl" ng-hide="userName">登录</button></a>
+        		<a href="#/tabs/register"><button type="button" class="btl" ng-hide="userName">注册</button></a>
+        	</div>
+        </div>
+
+
+        <div class="list list-inset mineTop">
+		    <div class="item">
+		    	我的订单
+		    	<i class="icon ion-chevron-right icon-accessory"></i>
+		    </div>
+		    <div class="item">
+		    	我的优惠卷
+		    	<i class="icon ion-chevron-right icon-accessory"></i>
+		    </div>
+		    <div class="item">
+		    	浏览记录
+		    	<i class="icon ion-chevron-right icon-accessory"></i>
+		    </div>
+		    <div class="item">
+		    	我的收藏
+		    	<i class="icon ion-chevron-right icon-accessory"></i>
+		    </div>
+		</div>
+    </ion-content>
+</ion-view>

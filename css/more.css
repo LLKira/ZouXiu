@@ -1,0 +1,24 @@
+.moreCol{
+    background:#E4366B;
+}
+    .moreCol h1.title{
+        color:white;
+    }
+.Mbtncolor{
+    /*background:#E4366B;*/
+    width:100%;
+    height:55px;
+    color:white;
+    margin-bottom:10px;
+    border-radius:5px;
+    background:-moz-linear-gradient(top,#ff386f,#c7315a);/*火狐*/
+    background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#ff386f), to(#c7315a));/*谷歌*/
+    filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ff386f', endColorstr='#c7315a'); /*IE6 & IE7*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ff386f', endColorstr='#c7315a')"; /* IE8 */
+}
+    .button.activated{
+        background:#ff386f;
+    }
+    .button:hover{
+        color:white;
+    }

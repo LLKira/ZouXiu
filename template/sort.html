@@ -1,0 +1,19 @@
+<ion-view title="ZXIU 走秀网">
+    <div class="bar bar-header item-input-inset hedSearch">
+        <label class="item-input-wrapper SInput">
+            <i class="icon ion-ios-search placeholder-icon"></i>
+            <input type="search" placeholder="Search">
+        </label>
+    </div>
+    <ion-content>
+        <ion-spinner icon="ios" class="sortSpiral" ng-show="iftrue"></ion-spinner>
+
+        <h4 class="sortAll"  ng-click="showAlls()">全部
+            <i ng-class="iftrue? 'ion-chevron-down' : 'ion-chevron-up'"></i></h4>
+        <ul class="list sortList"  ng-repeat="item in sortLists" ng-show="iftrue">
+            <li class="item item-icon-right ">{{ item.className }}
+                <i class="icon ion-chevron-right icon-accessory "></i>
+            </li>
+        </ul>
+    </ion-content>
+</ion-view>

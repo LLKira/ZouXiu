@@ -1,0 +1,31 @@
+div.checkBox{
+	padding: 0 40px;
+	margin-bottom: 20px;
+}
+div.checkBox input{
+	width: 20px;
+	height: 20px;
+}
+div.checkBox span, div.checkBox a{
+	display: inline-block;
+	vertical-align: 5px;
+	text-indent: 5px;
+}
+div.checkBox a{
+	margin-left: 10px;
+	color: #9D9D9D;
+}
+
+.bar-assertive .button {
+	border-color: #C34F71;
+	box-shadow: 0 0 2px #C34F71;
+    background-color: #E4366B;
+    color: #fff;
+    width: 60px;
+    height: 28px;
+    font-size: 12px;
+}
+.bar-assertive .button.activated{
+	border-color: #C34F71;
+    background-color: #E4366B;
+}

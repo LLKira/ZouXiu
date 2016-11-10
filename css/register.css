@@ -1,0 +1,29 @@
+label.item-input:nth-child(1){
+	margin-top: 30px;
+}
+
+label.item-input{
+	margin: 0 22px;
+	margin-bottom: 28px;
+	height: 36px;
+	border: 1px inset #F9F8E6;
+	border-radius: 5px;
+}
+label.item-input input{
+	font-size: 18px;
+	line-height: 34px;
+}
+
+div.padding{
+	padding: 12px 22px 0;
+}
+.button.button-positive{
+	background-color: #E4366B;
+	font-size: 18px;
+	border-radius: 5px;
+	box-shadow: 0px -1px 1px #888;
+}
+.button.button-positive.activated{
+	border: 0;
+	background-color: #E4366B;
+}

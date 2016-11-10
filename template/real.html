@@ -1,0 +1,12 @@
+<ion-view title="商品详情">
+    <ion-content class="detail-real has-header">
+        <!--333-->
+        <!--轮播-->
+        <ion-slide-box does-continue="true" auto-play="true"  slide-interval="3000" class="xunhuan" >
+            <ion-slide  class="pic-real" ng-repeat="item in detailData">
+                <img ng-src="{{item}}" alt="">
+            </ion-slide>
+        </ion-slide-box>
+
+    </ion-content>
+</ion-view>

@@ -1,0 +1,45 @@
+<ion-view title="ZXIU 走秀网">
+    <div class="bar bar-header item-input-inset hedSearch">
+        <label class="item-input-wrapper SInput">
+            <i class="icon ion-ios-search placeholder-icon"></i>
+            <input type="search" placeholder="Search">
+        </label>
+    </div>
+    <!--搜索框-->
+    <ion-content class="mainContent" scrollbar-y="false">
+        <!--轮播-->
+        <ion-slide-box does-continue="true" auto-play="true" pager-click="clickTo(index)" slide-interval="3000"
+                       class="loop" >
+            <ion-slide ng-repeat="item in loopImg" >
+                <img ng-src="{{item}}" alt="">
+            </ion-slide>
+        </ion-slide-box>
+
+        <!--商品列表-->
+        <div class="list ">
+            <div class="item item-thumbnail-left goodsList"  ng-repeat="item in listData">
+                <a href="#/Details/intro/{{item.goodsID}}">
+                    <img ng-src="{{item.goodsListImg}}">
+                    <h2 class="title">{{item.goodsName}}</h2>
+                    <div class="pricrInfo">
+                        <div>
+                            <span class="true"><em>¥</em>{{item.price}}</span>
+                            <del class="price"><em>¥</em>{{(item.price/(item.discount > 0? item.discount:10)*10) | number:1}}</del>
+                            <div>{{item.discount > 0 ? item.discount:10}}折</div>
+                        </div>
+                    </div>
+                </a>
+                <div class="addCart">
+                    <img src="img/cart.png" alt="" ng-click="addCar()">
+                </div>
+            </div>
+            <!--购物车按钮-->
+            <div class="ion ion-arrow-up-c backTop" ng-click="backTop()" ng-show="ifshow"></div>
+        </div>
+
+        <ion-infinite-scroll on-infinite="moreActicle()" distance="1%" ng-if="ifLoad">
+        </ion-infinite-scroll>
+
+    </ion-content>
+
+</ion-view>

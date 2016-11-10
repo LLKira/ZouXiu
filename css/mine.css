@@ -1,0 +1,56 @@
+.bkColor{
+	background: #F7F7F7;
+}
+.idCard{
+	width: 100%;
+	margin-top: 40px;
+	display: flex;
+}
+.idCard div{
+	flex-wrap: nowrap;
+}
+div.myImg{
+	margin: 0 17px;
+	border-radius: 8px;
+	overflow: hidden;
+}
+div.myImg img{
+	width: 82px;
+	height: 82px;
+	display: inherit;
+}
+p.name{
+	margin: 15px 0;
+	font-size: 18px;
+}
+button.btl{
+	margin-right: 22px;
+	background: #F45482;
+	border: 0;
+	color: #fff;
+	border-radius: 5px;
+	font-size: 12px;
+	height: 26px;
+	width: 54px;
+	box-shadow: 0px -1px 1px #888;
+}
+
+div.mineTop{
+	border-radius: 10px;
+	margin-top: 56px;
+}
+div.mineTop div.item:nth-child(1){
+	border-radius: 10px 10px 0 0;
+}
+div.mineTop div.item:nth-child(4){
+	border-radius: 0 0 10px 10px;
+}
+div.mineTop div.item{
+	position: relative;
+	font-size: 18px;
+	color: black;
+}
+div.mineTop div.item i.ion-chevron-right{
+	position: absolute;
+	right: 16px;
+}

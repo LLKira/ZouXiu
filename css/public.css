@@ -1,0 +1,30 @@
+html,body,div,span,p,button,img,input,h3{
+    font-family: "微软雅黑";
+    margin: 0;
+    padding: 0;
+}
+
+.bar .title {
+	font-size: 20px;
+}
+.tabs{
+	height: 52px;
+}
+.tabs-striped .tabs {
+	background: #484850;
+}
+.tabs-striped .tab-item.activated , .tabs-striped .tab-item.tab-item-active{
+    border-color: #E5376A;
+}
+.tab-item{
+	color: #fff;
+}
+.bar.bar-assertive {
+    border-color: #E4366B;
+    background-color: #E4366B;
+    background-image: linear-gradient(0deg,#E4366B,#E4366B 50%,transparent 50%);
+    color: #fff;
+}
+.tabs-icon-top>.tabs .tab-item {
+	font-size: 14px;
+}

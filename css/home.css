@@ -1,0 +1,101 @@
+.bar.hedSearch{
+    background: #665058;
+    position: absolute;
+    top: 44px;
+}
+.slider-pager span:nth-child(1),.slider-pager span:nth-child(4){
+    text-indent: 0px;
+}
+.mainContent{
+    top: 88px;
+}
+.SInput{
+    border-radius: 13px;
+}
+ion-slide-box.loop{
+    width: 100%;
+}
+.loop>div{
+    overflow: hidden;
+    height: auto;
+}
+.loop img{
+    width: 100%;
+    height: 160px;
+}
+
+.item .title{
+    font-size: 14px;
+    color:#000;
+    height: 40px;
+    font-family:'华文行楷';
+    overflow : hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+    display: -webkit-box;/*将对象作为弹性伸缩盒子模型显示*/
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;/*设置或检索伸缩盒对象的子元素的排列方式*/
+}
+.item-thumbnail-left img{
+    border:solid 1px #cccccc;
+}
+
+.item-thumbnail-left .true{
+    font-size: 24px;
+    color: red;
+}
+.item-thumbnail-left .price{
+    margin-left: 5px;
+    color: #cccccc;
+}
+.pricrInfo{
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+}
+.pricrInfo>div:nth-child(1){
+    float: left;
+}
+
+.pricrInfo>div:nth-child(1)>div{
+    font-size: 15px;
+    font-weight: bold;
+}
+.goodsList>a{
+    text-decoration: none;
+}
+.goodsList>a>img:nth-child(1){
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    max-width: 80px;
+    max-height: 80px;
+    width: 100%;
+    height: 100%;
+
+}
+.goodsList .addCart img{
+    width: 60px;
+    height: 34px;
+    float: right;
+    position: absolute;
+    top:56px;
+    right: 5px;
+    border: 0;
+}
+
+.backTop{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: 55px;
+    right: 15px;
+    font-size: 32px;
+    border-radius: 30px;
+    text-align: center;
+    padding-top:3px ;
+    color: #665058;
+   border: solid 1px grey;
+    z-index: 999;
+}
+

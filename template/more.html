@@ -1,0 +1,24 @@
+<ion-view title="更多"   hide-nav-bar="true">
+    <div class="bar bar-header  moreCol">
+        <a  href="#/tabs/mine" class="button icon-left ion-arrow-left-c button-clear button-dark"></a>
+        <button class="button  button-clear icon ion-arrow-left-c"></button>
+        <h1 class="title ">更多</h1>
+    </div>
+        <div class="list list-inset has-header" >
+            <div class="item item-icon-right"  ng-repeat="item in moreDatas">
+                {{item.name}}
+                <i class="icon ion-chevron-right icon-accessory"></i>
+            </div>
+        </div>
+
+        <div class="list list-inset has-header">
+            <div class="item item-icon-right" ng-repeat="item in moreAbout">
+                {{item}}
+                <i class="icon ion-chevron-right icon-accessory "></i>
+            </div>
+        </div>
+
+        <div class="list list-inset has-header"  ng-click="toDL()">
+            <button type="button"  class="button  button-full Mbtncolor ">退出登录</button>
+        </div>
+</ion-view>
